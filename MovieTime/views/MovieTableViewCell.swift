@@ -10,15 +10,15 @@ import UIKit
 
 class MovieTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+//    @IBOutlet weak var title: UILabel!
+//    @IBOutlet weak var Ryear: UILabel!
+//    @IBOutlet weak var genre: UILabel!
+    
+    
+//    func populate(with movies: MovieCore){
+//        title.text = movies.title
+//        Ryear.text = String(movies.releaseYear)
+//        genre.text = String(movies.genre?[0] ?? "")
+//    }
 
 }

@@ -1,0 +1,28 @@
+PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - lottie-ios (3.1.8)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - lottie-ios
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ChameleonFramework
+    - lottie-ios
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
+
+PODFILE CHECKSUM: a248deed142ee5efed5d54badb4d363e3248d2e3
+
+COCOAPODS: 1.9.1

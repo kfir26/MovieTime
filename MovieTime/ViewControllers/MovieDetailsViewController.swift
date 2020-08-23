@@ -7,24 +7,55 @@
 //
 
 import UIKit
+import SDWebImage
+import Lottie
 
 class MovieDetailsViewController: UIViewController {
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var poster: UIImageView!
+    @IBOutlet weak var rate: AARate!
+    @IBOutlet weak var genre: UILabel!
+    @IBOutlet weak var releaseYear: UILabel!
+    @IBOutlet weak var animationX: UIView!
+    
+    @IBOutlet weak var TVLogo: AnimationView!
+    
+    var movie:MovieCore?
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setAll()
+        startAnimation()
 
-        // Do any additional setup after loading the view.
     }
     
+    func setAll(){
+        guard let posters = movie?.image else {return}
+        print(posters)
+        guard let url = URL(string: posters)else{return}
+        
+        poster.sd_setImage(with: url, placeholderImage: UIImage.init(named: "placeholder"), options: SDWebImageOptions(),context: nil, progress: nil)
+        
+        labelTitle.text = movie?.title
+        rate.setRate(rate: Double(movie!.rating/2))
+        genre.text = String(movie?.genre?[0] ?? "")
+        releaseYear.text = String(movie!.releaseYear)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    func startAnimation(){
+           TVLogo.frame = view.bounds
+           TVLogo.animation = Animation.named("Agents of H.A.T.E")
+        TVLogo.contentMode = .scaleToFill
+           TVLogo.loopMode = .loop
+           TVLogo.play()
+        view.addSubview(TVLogo)
+        
+        }
+    
 }
+
+
+

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-MovieTime/Pods-MovieTime-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

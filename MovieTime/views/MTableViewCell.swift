@@ -9,16 +9,24 @@
 import UIKit
 
 class MTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var poster: UIImageView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var mainTitle: UILabel!
+    
+    @IBOutlet weak var releaseYear: UILabel!
+    
+    @IBOutlet weak var genre: UILabel!
+    
+    @IBOutlet weak var StarRate: AARate!
+    
+    
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func populate(with movies: MovieCore){
+        mainTitle.text = movies.title
+//        releaseYear.text = String(movies.releaseYear)
+//        genre.text = String(movies.genre?[0] ?? "")
 
-        // Configure the view for the selected state
     }
 
 }
