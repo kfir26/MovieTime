@@ -25,7 +25,6 @@
 		7FDAB90424DC1F6000B9DD68 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAB90324DC1F6000B9DD68 /* CoreDataManager.swift */; };
 		7FDAB90624DC25FC00B9DD68 /* MovieCore+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAB90524DC25FC00B9DD68 /* MovieCore+Extension.swift */; };
 		7FDAB90D24DC383300B9DD68 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAB90C24DC383300B9DD68 /* MovieViewController.swift */; };
-		7FDAB90F24DC386A00B9DD68 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAB90E24DC386A00B9DD68 /* MovieTableViewCell.swift */; };
 		7FDAB91824DC3D4D00B9DD68 /* MovieTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DD8DC24DB1DD6002DE5B5 /* MovieTime.xcdatamodeld */; };
 		7FFEEDA224EAD95500B15C5E /* star-wars.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEEDA124EAD95500B15C5E /* star-wars.json */; };
 		7FFEEDA424EADADD00B15C5E /* Agents of H.A.T.E.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEEDA324EADADD00B15C5E /* Agents of H.A.T.E.json */; };
@@ -55,7 +54,6 @@
 		7FDAB90324DC1F6000B9DD68 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		7FDAB90524DC25FC00B9DD68 /* MovieCore+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieCore+Extension.swift"; sourceTree = "<group>"; };
 		7FDAB90C24DC383300B9DD68 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
-		7FDAB90E24DC386A00B9DD68 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		7FFEEDA124EAD95500B15C5E /* star-wars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "star-wars.json"; sourceTree = "<group>"; };
 		7FFEEDA324EADADD00B15C5E /* Agents of H.A.T.E.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Agents of H.A.T.E.json"; sourceTree = "<group>"; };
 		7FFEEDA524EBF76900B15C5E /* QRScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanVC.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 		7FDAB90724DC30B400B9DD68 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				7FDAB90E24DC386A00B9DD68 /* MovieTableViewCell.swift */,
 				7FA9F77F24E450FC00CD38AF /* MTableViewCell.swift */,
 				7F56EFAD24E6BC69002F199C /* AARate.swift */,
 			);
@@ -295,7 +292,6 @@
 				7FA9F77E24E4411A00CD38AF /* MovieDetailsViewController.swift in Sources */,
 				7FDAB90424DC1F6000B9DD68 /* CoreDataManager.swift in Sources */,
 				7F56EFAE24E6BC69002F199C /* AARate.swift in Sources */,
-				7FDAB90F24DC386A00B9DD68 /* MovieTableViewCell.swift in Sources */,
 				7F5DD8D624DB1DD6002DE5B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

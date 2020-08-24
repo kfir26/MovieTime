@@ -20,9 +20,7 @@ func read(){
     for movie in movies{
         _ = MovieCore(title: movie.title, image: movie.image, rating: movie.rating, releaseYear: movie.releaseYear, genre: movie.genre)
         
-
         CoreDataManager.shared.saveContext()
-
     }
 }
 

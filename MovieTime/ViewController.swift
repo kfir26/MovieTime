@@ -27,8 +27,7 @@ class ViewController: UIViewController{
     
         override func viewDidLoad() {
             super.viewDidLoad()
-//        read()
-        //callMovie()
+        read()
             startAnimation()
             
         }

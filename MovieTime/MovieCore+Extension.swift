@@ -19,6 +19,15 @@ extension MovieCore{
         self.releaseYear = Int16(releaseYear)
         self.genre = genre
     }
+    
+    convenience init(json: [String: Any]){
+        self.init(context: CoreDataManager.shared.context)
+        self.title = json["title"] as? String
+        self.image = json["image"] as? String
+        self.rating = json["rating"] as? Double ?? 0
+        self.releaseYear = json["releaseYear"] as? Int16 ?? 0
+        self.genre = json["genre"] as? [String] ?? []
+    }
 }
 
 
